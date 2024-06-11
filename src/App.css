@@ -93,3 +93,8 @@ select{
  
 }
 /*END BANNER*/
+/*HOME CATEGORY*/
+.catPargraph{
+  letter-spacing: 4px;
+  font-size: 17px;
+}
