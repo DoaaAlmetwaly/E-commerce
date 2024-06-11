@@ -1,0 +1,95 @@
+
+
+
+body {
+  background: #fff;
+  color: #555;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+nav.navbar.navbar-expand-lg {
+  background: transparent !important ;
+  width: 100%;
+  position: absolute;
+}
+.signupbtn {
+  background-color: #ffeb36 !important;
+  border-color: #ffeb36 !important;
+  transition: all 0.2s ease-in-out;
+}
+.signupbtn:hover {
+  opacity: 0.8;
+  transform: translateX(-5px);
+  transform: translateY(-5px);
+}
+@media (max-width: 600px){
+    .signupbtn, .login{
+        background-color: #313e93!important;
+        color: white !important;
+        margin-block: 10px;
+    }
+}
+@media (max-width: 600px) {
+  .navbar-collapse {
+    background-color: #ffeb36;
+  }
+}
+@media (max-width: 600px) {
+  li.nav-item,
+  .container:nth-of-type(1) {
+    margin-inline: 15px 0 !important;
+    padding-inline: 0px !important;
+    padding-block: 10px;
+  }
+} 
+@media (max-width: 600px) {
+  li.nav-item {
+    margin-inline: 15px !important;
+  }
+}  
+/*END NAVBAR*/
+/*BANNER*/
+.Banner{
+  background-image: url(./assets/06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
+@media (max-width:600px) {
+
+}
+.Banner{
+
+  background-position: left;
+}
+
+.Banner h1{
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: 300;
+  padding-top: 200px;
+}
+input{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: none ;
+  padding-left: 220px !important;
+}
+input:focus-visible{
+  border-color: white !important;
+}
+form span{
+  top:25px;
+right: 30px;}
+ 
+select{
+ z-index: 10;
+ height: 95%;
+ outline:0px;
+ color: #3d3c3c;
+ 
+ 
+}
+/*END BANNER*/
