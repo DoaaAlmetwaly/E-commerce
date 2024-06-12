@@ -24,9 +24,9 @@ const Banner = () => {
           <div className="col-md-12 pt-md-3">
             <h1 className=" text-center">
               Search Your One From <span className=" text-warning"> Thousand</span> Of <br />Products</h1>
-            <form className=" d-flex mt-3  input-group position-relative " >
+            <form className=" d-flex mt-3  input-group position-relative" >
             <SelectedCategory select= {"all"} />
-               <input className=" form-control rounded-5 w-75 py-4" type="text" placeholder="Search Your Product" name="search" id="[search]" value={search} onChange={handelSearch}/>
+               <input className=" form-control rounded-5  py-4" type="text" placeholder="Search Your Product" name="search" id="[search]" value={search} onChange={handelSearch}/>
                 <span className=" position-absolute" id="basic-addon1"><CiSearch size={27}/></span> 
             
             </form>

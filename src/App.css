@@ -1,6 +1,4 @@
 
-
-
 body {
   background: #fff;
   color: #555;
@@ -15,8 +13,6 @@ nav.navbar.navbar-expand-lg {
   position: absolute;
 }
 .signupbtn {
-  background-color: #ffeb36 !important;
-  border-color: #ffeb36 !important;
   transition: all 0.2s ease-in-out;
 }
 .signupbtn:hover {
@@ -33,7 +29,7 @@ nav.navbar.navbar-expand-lg {
 }
 @media (max-width: 600px) {
   .navbar-collapse {
-    background-color: #ffeb36;
+    background-color: #fec107
   }
 }
 @media (max-width: 600px) {
@@ -59,7 +55,9 @@ nav.navbar.navbar-expand-lg {
   background-position: center;
 }
 @media (max-width:600px) {
-
+  form span{
+    display:none;
+  }
 }
 .Banner{
 
@@ -92,9 +90,86 @@ select{
  
  
 }
+
 /*END BANNER*/
 /*HOME CATEGORY*/
 .catPargraph{
   letter-spacing: 4px;
   font-size: 17px;
+}
+
+ 
+.category-inner {
+  position: relative;
+}
+
+
+.category-inner .link{
+  position: relative;
+  display: block;
+  transition: all 0.7s ease-in-out;
+
+}
+
+.category-inner .link::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.category-inner .link:hover{
+  transform: translate(0px, 10px);
+}
+
+
+
+.categoryItems {
+  bottom: 35px;
+  margin-left: 10px;
+  z-index: 2;
+ 
+}
+a{
+  text-decoration: none !important;
+  
+}
+.btn-outline-warning{
+font-weight: 600 !important;
+}
+/*END HOME CATEGORY*/
+/*CATEGORY SHOW*/
+.categoryshow{
+
+background-image: url(./assets/images/shape-img/01.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-height: 100vh;
+}
+.course-shape{
+  top:40%
+}
+
+.course-shape.one{
+  left: 0;
+ 
+}
+.course-shape.two{
+  right: 0;
+ 
+}
+.categoryshow li:hover{
+  background-color: #fec107;
+  height: 28px;
+  width: 76px;
+  text-align: center;
+  padding-top: 2px;
+}
+.title{
+  margin-right: 170px;
 }
