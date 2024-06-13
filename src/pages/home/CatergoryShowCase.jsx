@@ -84,21 +84,26 @@ id: 8,
 
 const CatergoryShowCase = () => {
     const [items,setItems]=useState(ProductData);
-    const filterItem =()=>{}
+    const filterItem =(cateItems)=>{
+      const updateData= ProductData.filter((element)=>{
+        return element.cate===cateItems;
+      })
+      setItems(updateData)
+    }
   return (
-    <section className="categoryshow position-relative pt-5">
+    <section className="categoryshow position-relative py-5">
       <div className="course-shape one position-absolute">
         <img src={shap1} alt="" />
       </div>
       <div className="course-shape two position-absolute">
         <img src={shap2} className="" alt="" />
       </div>
-      <div className="container pt-5">
-        <div className="row pt-5">
-          <div className="bg-white mt-5 d-flex ">
-            <h2 className="text-capitalize py-3 ms-2">our products</h2>
-            <ul className="d-flex ms-auto mt-4 list-unstyled">
-              <li className="me-4" onClick={() => filterItem("All")}>
+      <div className="container py-5">
+        <div className="row py-5">
+          <div className="bg-white mt-5 d-md-flex d-sm-block ">
+            <h2 className="text-capitalize py-md-3 ms-md-2 text-center">our products</h2>
+            <ul className="d-flex  ms-md-auto mt-4  justify-content-center ms-sm-4 list-unstyled text-sm-center">
+              <li className="me-4" onClick={() => setItems(ProductData)}>
                 All
               </li>
               <li className="me-4" onClick={() => filterItem("Shoes")}>
@@ -117,16 +122,20 @@ const CatergoryShowCase = () => {
           </div>
         
             {
-                items.map((prod)=> <div className='col-md-3 pt-5'  key={prod.id}>
-                    <img src={require('../../assets/images/categoryTab/'+ prod.imgUrl+'.jpg')} className='w-100' alt="" />
-                    <div className='bg-warning d-flex pt-2'>
+                items.map((prod)=> <div className='col-lg-3 col-md-6 pt-5'  key={prod.id}>
+                  <div className="card">
 
-                  <h6 className=''><a href='#!' className='title text-black ms-2'> {prod.cate}</a></h6>  
+                    <img src={require('../../assets/images/categoryTab/'+ prod.imgUrl+'.jpg')} className='w-100 prod-image' alt="" />
+                    <div className='bg-warning d-flex pt-2 px-2'>
+
+                  <h6><a href='#!' className='title text-black'> {prod.cate}</a></h6>  
                     <Ratting/>
                     </div>
-                  <div> <h6 className='py-3'><Link to={`/shop${prod.id}`} className='text-black'> {prod.title}</Link></h6> </div>
-                  <div className='d-flex'><Link to={'/'} className='me-5 text-black' >{prod.brand}</Link>
+                  <div className="prod-title"> <h6 className='pt-3 px-2'> <Link to={`/shop${prod.id}`} className='text-black'> {prod.title}</Link></h6> </div>
+                 <hr className="text-black-50 mt-2 mb-2"/>
+                  <div className='d-flex justify-content-between mx-2'><Link to={'/'} className='me-5 text-black' >{prod.brand}</Link>
                   <p className=' text-warning price'>{prod.price} </p>
+                  </div>
                   </div>
 
 

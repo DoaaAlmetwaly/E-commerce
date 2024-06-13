@@ -70,19 +70,19 @@ nav.navbar.navbar-expand-lg {
   font-weight: 300;
   padding-top: 200px;
 }
-input{
+.Banner input{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: none ;
   padding-left: 220px !important;
 }
-input:focus-visible{
+.Banner  input:focus-visible{
   border-color: white !important;
 }
-form span{
+.Banner form span{
   top:25px;
 right: 30px;}
  
-select{
+.Banner select{
  z-index: 10;
  height: 95%;
  outline:0px;
@@ -173,3 +173,53 @@ min-height: 100vh;
 .title{
   margin-right: 170px;
 }
+.prod-title a:hover{
+color: #fec107 !important;
+}
+.prod-image{
+  transition: all 0.7s ease-out;
+}
+.prod-image:hover{
+  transform: scale(.9,.9)
+}
+.card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width: 600px) {
+  .categoryshow{
+    background-image:none;
+  }
+}
+@media (max-width: 600px) {
+  
+}
+/* END CATEGORY SHOW*/
+/*REGISTER*/
+
+
+
+.register{
+background-image: url(./assets/images/bg-img/07.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 20%;
+
+
+}
+.register h6 {
+  letter-spacing: 3px;
+}
+.registerform{
+  background: linear-gradient(to top,  #6b2b6b93,  #f8e6f7de,  #e9dce8af,  #dbc7da6c,  #ddccdcf6);
+
+  
+}
+.registerform input{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border: none;
+}
+
+/* END REGISTER*/
+
+
+

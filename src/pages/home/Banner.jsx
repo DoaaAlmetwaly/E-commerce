@@ -34,7 +34,7 @@ const Banner = () => {
         <ul className=" list-unstyled d-flex flex-wrap">
           {
             search && filteredProduct.map((product,i)=> <li key={i} className="my-2 " >
-              <Link to={`/shop/${product.id}`} className=" text-decoration-none text-black-50 ms-2 shadow-lg py-2 rounded-5 px-2">{product.name}</Link>
+              <Link to= {`/shop/${product.id}`} className=" text-decoration-none text-black-50 ms-2 shadow-lg py-2 rounded-5 px-2">{product.name}</Link>
             </li>)
           }
         </ul>
