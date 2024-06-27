@@ -3502,7 +3502,7 @@ button {
     transform: skewX(-20deg);
 }
 @media(max-width: 1199px) {
-    .instructor-section.style-2: :after {
+    .instructor-section.style-2::after {
     display: none;
 }
 }.instructor-section.style-2 .section-wrapper {
@@ -3512,22 +3512,22 @@ button {
     order: 2;
 }
 @media(min-width: 1200px) {
-    .instructor-section.style-2 .section-wrapper .col: nth-child(3n+2) {
+    .instructor-section.style-2 .section-wrapper .col:nth-child(3n+2) {
     order: 2;
 }
 }@media(min-width: 768px)and (max-width: 1199px) {
-    .instructor-section.style-2 .section-wrapper .col: nth-child(3n+2) {
+    .instructor-section.style-2 .section-wrapper .col:nth-child(3n+2) {
     order: 1;
 }
 }.instructor-section.style-2 .section-wrapper .col:nth-child(3n+3) {
     order: 1;
 }
 @media(min-width: 1200px) {
-    .instructor-section.style-2 .section-wrapper .col: nth-child(3n+3) {
+    .instructor-section.style-2 .section-wrapper .col:nth-child(3n+3) {
     order: 1;
 }
 }@media(min-width: 768px)and (max-width: 1199px) {
-    .instructor-section.style-2 .section-wrapper .col: nth-child(3n+3) {
+    .instructor-section.style-2 .section-wrapper .col:nth-child(3n+3) {
     order: 2;
 }
 }.instructor-section.style-2 .section-wrapper .count-item:nth-child(3n+2) .count-inner .count-icon::before {
