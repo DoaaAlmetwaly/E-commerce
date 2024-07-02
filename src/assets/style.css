@@ -4543,7 +4543,7 @@ button {
     transform: scale(0);
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
-    transition: all .3s ease;
+    
 }
 .shop-page .shop-product-wrap .product-item .product-thumb .pro-thumb img, .shop-page .shop-product-wrap .product-list-item .product-thumb .pro-thumb img {
     transform-origin: left;
