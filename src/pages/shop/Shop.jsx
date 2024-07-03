@@ -5,7 +5,7 @@ import { FaList } from "react-icons/fa6";
 import { FaListAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Data from '../../products.json'
-import Paginstion from './Paginstion';
+import Pagination from './Pagination';
 const Shop = () => {
 
     const [viewType, setViewType] = useState('grid'); 
@@ -22,7 +22,7 @@ const Shop = () => {
        const indexOfLastProduct=productsPerPage *currentPage;
        const indexOfFirstProduct=indexOfLastProduct - productsPerPage;
        const currentProduct=Products.slice(indexOfFirstProduct,indexOfLastProduct);
-       const pagination =(pageNumber)=>{
+       const Pagination =(pageNumber)=>{
         setCurrentPage(pageNumber)
        }
 
@@ -54,10 +54,10 @@ const Shop = () => {
           <ProductList Products={Products} />
         )}
             </div>
-            <Paginstion
+            <Pagination
             productsPerPage={productsPerPage}
             totalProducts={Products.length}
-            pagination={pagination}
+            Pagination={Pagination}
             activePage={currentPage}
             />
           </article>
